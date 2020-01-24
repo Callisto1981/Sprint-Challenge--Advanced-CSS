@@ -1,1 +1,23 @@
 // Mixins Here
+.textColor {
+  text-decoration: none;
+  color: rgb(50, 48, 48);
+}
+
+.bg-colorWidth {
+  background-color: rgb(233, 230, 230);
+  max-width: 900px;
+}
+
+.button(@porcelain, @btn-bg-color ) {
+  color: @porcelain;
+  padding: 7px 1px 0;
+  text-align: center;
+  display: block;
+  background-color: @btn-bg-color;
+  margin: 0 10px 0 0;
+  width: 25%;
+  height: 35px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
