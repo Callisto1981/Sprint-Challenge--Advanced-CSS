@@ -11,15 +11,24 @@
   flex-direction: column;
 
   h1 {
-    padding: 15px;
-    font-size: 45px;
+    padding: 1%; //15px;
+    font-size: 450%; //45px;
+    @media @mobile {
+      padding: 7px;
+      font-size: 225%; //22px;
+    }
   }
   nav {
+    border: 1px solid blue;
     display: flex;
     justify-content: space-around;
     width: 50%;
-    padding-bottom: 7px;
+    padding-bottom: 1%;
     font-size: 1.6rem;
+    @media @mobile {
+      width: 60%;
+      font-size: 1.2rem;
+    }
   }
   a {
     .textColor();
